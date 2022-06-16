@@ -21,3 +21,9 @@ First off you'll need a webhook in the Discord channel you want to use for Minec
 [Here's Discord's official guide to setting up webhooks](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
 
 This channel should not be a general talking channel and is best to be either a channel created for this purpose or a no-mic channel for voice chats.
+
+## Building
+
+This project can be built in the Eclipse IDE by exporting as a JAR file and choosing all the default options.
+
+**IMPORTANT NOTE:** This plugin will be getting a revamp in order to support advancements and Bedrock player skins on Geyser servers once [LanguageTools](https://github.com/Aurillium/LanguageTools) has been finished. This will include a general code-neatening and better commands and config so watch this space.
