@@ -1,0 +1,16 @@
+main: space.aurillium.discordchat.DiscordChat
+name: DiscordChat
+version: 1.19.0
+author: Aurillium (Memphis Marshall)
+api-version: 1.19
+commands:
+    master_discord:
+        description: Master switch for the Discord chat link
+        usage: /master_discord on|off
+        permission: DiscordChat.master_discord
+        permission-message: You cannot use this command.
+    discord:
+        description: Switch the Discord chat link on or off
+        usage: /discord on|off [player]
+        permission: DiscordChat.discord
+        permission-message: You cannot use this command.

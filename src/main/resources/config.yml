@@ -1,0 +1,8 @@
+# If set to false, no messages will be sent to Discord
+master: true
+# A list of user IDs of players who have opted out
+opt_out_chat:
+-
+# A list of Discord webhook URLs for messages to be broadcast to
+webhook_urls:
+- 
