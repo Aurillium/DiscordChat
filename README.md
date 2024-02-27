@@ -6,13 +6,17 @@ A Spigot plugin designed to allow your Minecraft chat to show up in Discord.
 
 Your configuration file will look like this:
 ```yml
-chat_master: true
+# If set to false, no messages will be sent to Discord
+master: true
+# A list of user IDs of players who have opted out
 opt_out_chat:
-- 
+-
+# A list of Discord webhook URLs for messages to be broadcast to
 webhook_urls:
 - 
 ```
-`chat_master` is whether or not the Discord chat is enabled in general. This can be modified here or with the `masterchatoff` and `masterchaton` commands.
+`master` is whether or not the Discord chat is enabled in general. This can be modified here or with the `master on` and `master off` commands.
+`opt_out_chat` is a list of UUIDs of players that have opted out of the chat feature. This should usually not be edited by hand; the command to add or remove yourself from this list is `discord on` or `discord off` respectively. If you are an admin, it is possible to control this setting for other players with `discord <on/off> <player_name>`
 `webhook_urls` is a list of Discord webhook URLs for the bot to send messages to. All you need to do is create a webhook in the channel you want messages sent to in Discord and paste the URL here.
 
 ## Setting it up
@@ -24,6 +28,4 @@ This channel should not be a general talking channel and is best to be either a 
 
 ## Building
 
-This project can be built in the Eclipse IDE by exporting as a JAR file and choosing all the default options.
-
-**IMPORTANT NOTE:** This plugin will be getting a revamp in order to support advancements and Bedrock player skins on Geyser servers once [LanguageTools](https://github.com/Aurillium/LanguageTools) has been finished. This will include a general code-neatening and better commands and config so watch this space.
+This project can be built in any environment that supports Gradle by using `./gradlew shadowJar`. The file that should be exported to the server is `build/libs/DiscordChat-1.0-SNAPSHOT-all.jar`, as this includes the `org.json` library required for the plugin to function.
