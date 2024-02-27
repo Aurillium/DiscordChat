@@ -15,9 +15,9 @@ opt_out_chat:
 webhook_urls:
 - 
 ```
-`master` is whether or not the Discord chat is enabled in general. This can be modified here or with the `master on` and `master off` commands.
-`opt_out_chat` is a list of UUIDs of players that have opted out of the chat feature. This should usually not be edited by hand; the command to add or remove yourself from this list is `discord on` or `discord off` respectively. If you are an admin, it is possible to control this setting for other players with `discord <on/off> <player_name>`
-`webhook_urls` is a list of Discord webhook URLs for the bot to send messages to. All you need to do is create a webhook in the channel you want messages sent to in Discord and paste the URL here.
+- `master` is whether or not the Discord chat is enabled in general. This can be modified here or with the `master on` and `master off` commands.
+- `opt_out_chat` is a list of UUIDs of players that have opted out of the chat feature. This should usually not be edited by hand; the command to add or remove yourself from this list is `discord on` or `discord off` respectively. If you are an admin, it is possible to control this setting for other players with `discord <on/off> <player_name>`
+- `webhook_urls` is a list of Discord webhook URLs for the bot to send messages to. All you need to do is create a webhook in the channel you want messages sent to in Discord and paste the URL here.
 
 ## Setting it up
 
